@@ -1,6 +1,7 @@
+
 # 🤖 AI Chatbot (Flask + JS + OpenRouter)
 
-A smart, responsive chatbot built using **Python Flask**, **vanilla JavaScript**, and **OpenRouter.ai** for free GPT-style AI conversations. Features a sleek animated gradient background, WhatsApp-style chat bubbles, and secure API integration using `.env`.
+A smart, responsive chatbot built using **Python Flask**, **vanilla JavaScript**, and **OpenRouter.ai** for free GPT-style AI conversations. Features a sleek animated gradient background, WhatsApp-style chat bubbles, keyboard and click-based message sending, and secure API integration using `.env`.
 
 > 💡 Developed by **Ameera Thiwanka**  
 > 🚫 This project is intellectual property. Do not copy or reuse without permission.
@@ -10,12 +11,11 @@ A smart, responsive chatbot built using **Python Flask**, **vanilla JavaScript**
 ## 🎯 Features
 
 - 🔥 ChatGPT-style AI replies (via OpenRouter API)
-- ⚡ Responsive UI with animated gradient background
-- 💬 WhatsApp-style chat bubbles (user on right, bot on left)
-- ⌨️ Supports Enter key and button click
-- 🧠 Message history (in session)
-- 🔐 API key hidden using `.env`
-- ✅ Clean and modular codebase
+- ⚡ Animated gradient background
+- 💬 WhatsApp-style message layout (user vs bot)
+- ⌨️ Press `Enter` or click Send
+- 📦 Clean and modular structure (Flask + JS + CSS)
+- 🔐 Uses `.env` to secure API keys
 
 ---
 
@@ -26,11 +26,17 @@ A smart, responsive chatbot built using **Python Flask**, **vanilla JavaScript**
 ```bash
 git clone https://github.com/<your-username>/MyFirstChatBot.git
 cd MyFirstChatBot
+```
+
+---
 
 ### 2. Install Dependencies
 
 ```bash
 pip install flask requests python-dotenv
+```
+
+---
 
 ### 3. Create a `.env` File
 
@@ -38,6 +44,11 @@ Create a `.env` file in your root directory with your OpenRouter API key:
 
 ```env
 OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+> 🔒 **Never share this key** or push your `.env` file to GitHub!
+
+---
 
 ### 4. Add `.env` to `.gitignore`
 
@@ -46,16 +57,22 @@ OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 __pycache__/
 *.pyc
 venv/
+```
+
+---
 
 ### 5. Run the App
 
 ```bash
 python app.py
-Open in browser:
-http://localhost:5000
+```
+
+Open in browser:  
+[http://localhost:5000](http://localhost:5000)
+
+---
 
 ## 🗂️ Project Structure
----
 
 ```bash
 MyFirstChatBot/
@@ -70,7 +87,9 @@ MyFirstChatBot/
 └── static/
     ├── style.css       # Gradient background + chat styles
     └── script.js       # Handles sending messages + keyboard support
+```
 
+---
 
 ## 🧠 Example Messages to Try
 
@@ -87,4 +106,25 @@ Currently using:
 
 ```bash
 model: mistralai/mistral-7b-instruct
+```
 
+You can change this in `app.py` to try different OpenRouter models.
+
+---
+
+## 👤 About the Developer
+
+I'm **Ameera Thiwanka**, a Computer Science & Engineering undergrad passionate about backend development, cloud, and smart UIs.
+
+🔗 [LinkedIn](https://linkedin.com/in/ameerathiwanka)  
+✉️ Email: youremail@example.com *(optional)*
+
+---
+
+## 🛡 License & Use
+
+This project is created for educational and portfolio purposes.  
+It is not licensed for commercial reuse.  
+Please contact me before using any part of this code.
+
+---
