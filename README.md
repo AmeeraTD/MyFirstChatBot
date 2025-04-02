@@ -114,10 +114,9 @@ You can change this in `app.py` to try different OpenRouter models.
 
 ## 👤 About the Developer
 
-I'm **Ameera Thiwanka**, a Computer Science & Engineering undergrad passionate about backend development, cloud, and smart UIs.
+I'm **Ameera Thiwanka**, a Computer Science & Engineering undergrad passionate about backend development.
 
 🔗 [LinkedIn](https://linkedin.com/in/ameerathiwanka)  
-✉️ Email: youremail@example.com *(optional)*
 
 ---
 
