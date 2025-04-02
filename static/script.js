@@ -52,5 +52,6 @@ function appendMessage(sender, text) {
         sendMessage();
       }
     });
+    
   });
   

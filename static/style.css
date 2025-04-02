@@ -5,7 +5,9 @@
   
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: #e5ddd5;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +16,10 @@
   }
   
   .container {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 500px;
     height: 90vh;
@@ -24,6 +27,7 @@
     flex-direction: column;
     overflow: hidden;
   }
+  
   
   h2 {
     margin: 0;
@@ -94,4 +98,17 @@
   button:hover {
     background-color: #064b45;
   }
+
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
