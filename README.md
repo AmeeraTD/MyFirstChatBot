@@ -30,3 +30,4 @@ A basic chatbot built using Python (Flask) and vanilla JavaScript. This is a lig
 ```bash
 git clone https://github.com/AmeeraTD/MyFirstChatBot.git
 cd simple-chatbot
+python app.py
