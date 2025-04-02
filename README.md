@@ -1,33 +1,90 @@
-# 🧠 Simple Chatbot (Flask + HTML)
+# 🤖 AI Chatbot (Flask + JS + OpenRouter)
 
-A basic chatbot built using Python (Flask) and vanilla JavaScript. This is a lightweight, beginner-friendly chatbot that responds to predefined inputs with simple logic.
+A smart, responsive chatbot built using **Python Flask**, **vanilla JavaScript**, and **OpenRouter.ai** for free GPT-style AI conversations. Features a sleek animated gradient background, WhatsApp-style chat bubbles, and secure API integration using `.env`.
 
-> 🚀 Created and maintained by **Ameera Thiwanka**  
-> All rights reserved. This project is my original work and intellectual property.
-
----
-
-## 📸 Preview
-
-![Chatbot Screenshot](preview.png) <!-- (Add a screenshot named preview.png in your repo folder) -->
+> 💡 Developed by **Ameera Thiwanka**  
+> 🚫 This project is intellectual property. Do not copy or reuse without permission.
 
 ---
 
-## 🛠 Features
+## 🎯 Features
 
-- 🌐 Web-based chat interface
-- ⚙️ Flask backend
-- 🧠 Rule-based responses
-- 📦 No database or AI required
-- 🪶 Clean and lightweight UI
+- 🔥 ChatGPT-style AI replies (via OpenRouter API)
+- ⚡ Responsive UI with animated gradient background
+- 💬 WhatsApp-style chat bubbles (user on right, bot on left)
+- ⌨️ Supports Enter key and button click
+- 🧠 Message history (in session)
+- 🔐 API key hidden using `.env`
+- ✅ Clean and modular codebase
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repo
+### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/AmeeraTD/MyFirstChatBot.git
-cd simple-chatbot
+git clone https://github.com/<your-username>/MyFirstChatBot.git
+cd MyFirstChatBot
+
+### 2. Install Dependencies
+
+```bash
+pip install flask requests python-dotenv
+
+### 3. Create a `.env` File
+
+Create a `.env` file in your root directory with your OpenRouter API key:
+
+```env
+OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+### 4. Add `.env` to `.gitignore`
+
+```gitignore
+.env
+__pycache__/
+*.pyc
+venv/
+
+### 5. Run the App
+
+```bash
 python app.py
+Open in browser:
+http://localhost:5000
+
+## 🗂️ Project Structure
+---
+
+```bash
+MyFirstChatBot/
+├── app.py              # Flask backend
+├── .env                # Secret API key (not tracked)
+├── .gitignore
+├── README.md
+│
+├── templates/
+│   └── index.html      # Chat UI
+│
+└── static/
+    ├── style.css       # Gradient background + chat styles
+    └── script.js       # Handles sending messages + keyboard support
+
+
+## 🧠 Example Messages to Try
+
+- "Tell me a joke"  
+- "What is Flask?"  
+- "What’s the capital of Japan?"  
+- "Give me 3 fun Python project ideas"
+
+---
+
+## 📌 Model in Use
+
+Currently using:
+
+```bash
+model: mistralai/mistral-7b-instruct
+
